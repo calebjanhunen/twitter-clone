@@ -27,6 +27,7 @@
         - #2a8e3d
     - Accents:
     - Greys:
+        - #eee
         - #ddd
         - #767676 (lightest grey allowed on white)
 

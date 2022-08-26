@@ -14,6 +14,7 @@
 .logo-icon {
     font-size: 3.2rem;
     color: #2f9e44;
+    margin-left: 1.6rem;
 }
 
 /****** NAVIGATION ******/
@@ -35,7 +36,6 @@
     font-size: 2.4rem;
     text-decoration: none;
     color: #000;
-    /* background-color: #6f6f6f; */
     border-radius: 4rem;
     padding: 1.2rem 1.6rem;
 
@@ -103,6 +103,131 @@
     justify-self: end;
 }
 
+/***************************************/
+/* MAIN SECTION */
+/***************************************/
 .main {
+    border-left: 1px solid #eee;
+    grid-template-columns: 60fr 40fr;
+    grid-template-rows: 5rem 5fr 1fr;
+    column-gap: 3.2rem;
+}
+
+/***************************************/
+/* STICKY TOP BAR SECTION */
+/***************************************/
+.section-sticky-top-bar {
+    background-color: #fff;
+    z-index: 999;
+    border-right: 1px solid #eee;
+
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+/***************************************/
+/* SEARCH BAR SECTION */
+/***************************************/
+.section-search-bar {
+    align-self: center;
+}
+
+.search-bar {
+    position: relative;
+}
+
+.search-bar-icon {
+    font-size: 2.4rem;
+    color: #777;
+
+    position: absolute;
+    top: 50%;
+    left: 2rem;
+    transform: translateY(-50%);
+}
+
+.search-bar input {
+    /* height: 100%; */
+    font-family: inherit;
+    font-size: 1.6rem;
+    height: 4rem;
+    border: none;
+    border-radius: 4rem;
+    background-color: #ddd;
+    width: 100%;
+    padding-left: 6.4rem;
+}
+
+/***************************************/
+/* FEED SECTION */
+/***************************************/
+.section-feed {
+    border-right: 1px solid #eee;
+
+    grid-row: 1/-1;
+    grid-column: 1/2;
+}
+
+.create-tweet {
+    margin-top: 5rem;
+
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    grid-template-rows: 2fr 1fr;
+    column-gap: 1.2rem;
+    row-gap: 1.2rem;
+}
+
+.create-tweet-img {
+    width: 100%;
+}
+
+.create-tweet-input {
+    resize: none;
+    font-family: inherit;
+    font-size: 2rem;
+    border: none;
+    align-self: end;
+}
+
+.create-tweet-input:focus {
+    outline: none;
+}
+
+.create-tweet-more-options {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+
+    grid-column: 2/-1;
+}
+
+.btn--more-options {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.more-options-icon {
+    font-size: 1.6rem;
+}
+
+.btn--tweet-small {
+    margin-left: auto;
+    padding: 0.8rem 1.6rem;
+    /* height: 3.4rem; */
+}
+
+/***************************************/
+/* WHAT'S HAPPENING SECTION */
+/***************************************/
+.aside {
     background-color: blue;
+}
+
+/***************************************/
+/* FOOTER SECTION */
+/***************************************/
+.footer {
+    background-color: aquamarine;
 }

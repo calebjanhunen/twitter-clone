@@ -10,7 +10,7 @@ body {
         sans-serif;
     line-height: 1;
     font-weight: 400;
-    color: #333;
+    color: #000;
 }
 
 html {
@@ -25,12 +25,20 @@ html {
 }
 
 .grid--2-cols {
-    grid-template-columns: 25fr 75fr;
+    grid-template-columns: 23fr 77fr;
+}
+
+.content {
+    max-width: 128rem;
+    margin: 0 auto;
 }
 
 .container {
-    max-width: 120rem;
-    margin: 0 auto;
+    padding: 1.6rem;
+}
+
+.heading-primary {
+    font-size: 2rem;
 }
 
 .btn {

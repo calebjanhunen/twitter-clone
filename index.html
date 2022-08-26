@@ -18,6 +18,8 @@
 
         <title>Twitter Clone</title>
 
+        <script defer src="js/script.js"></script>
+
         <script
             type="module"
             src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -25,7 +27,7 @@
     </head>
 
     <body>
-        <div class="container grid grid--2-cols">
+        <div class="content grid grid--2-cols">
             <header class="header">
                 <a href="#" class="logo">
                     <ion-icon class="logo-icon" name="logo-twitter"></ion-icon>
@@ -130,7 +132,75 @@
                     ></ion-icon>
                 </button>
             </header>
-            <main class="main">Main</main>
+
+            <main class="main grid">
+                <section class="section-sticky-top-bar container">
+                    <h1 class="heading-primary">Home</h1>
+                </section>
+
+                <section class="section-search-bar">
+                    <div class="search-bar">
+                        <ion-icon
+                            class="search-bar-icon"
+                            name="search-outline"
+                        ></ion-icon>
+                        <input type="text" placeholder="Search Twitter" />
+                    </div>
+                </section>
+
+                <section class="section-feed container">
+                    <div class="create-tweet">
+                        <img
+                            src="img/profile.png"
+                            class="create-tweet-img"
+                            alt="Profile Image"
+                        />
+                        <textarea
+                            class="create-tweet-input"
+                            placeholder="What's Happening?"
+                            maxlength="246"
+                        ></textarea>
+
+                        <div class="create-tweet-more-options">
+                            <button class="btn--more-options">
+                                <ion-icon
+                                    class="more-options-icon"
+                                    name="images-outline"
+                                ></ion-icon>
+                            </button>
+                            <button class="btn--more-options">
+                                <ion-icon
+                                    class="more-options-icon"
+                                    name="stats-chart-outline"
+                                ></ion-icon>
+                            </button>
+                            <button class="btn--more-options">
+                                <ion-icon
+                                    class="more-options-icon"
+                                    name="happy-outline"
+                                ></ion-icon>
+                            </button>
+                            <button class="btn--more-options">
+                                <ion-icon
+                                    class="more-options-icon"
+                                    name="calendar-outline"
+                                ></ion-icon>
+                            </button>
+                            <button class="btn--more-options">
+                                <ion-icon
+                                    class="more-options-icon"
+                                    name="location-outline"
+                                ></ion-icon>
+                            </button>
+                            <button class="btn btn--tweet btn--tweet-small">
+                                Tweet
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <aside class="aside">Aside</aside>
+                <footer class="footer">Footer</footer>
+            </main>
         </div>
     </body>
 </html>
