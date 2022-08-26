@@ -5,13 +5,132 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+        <!-- ARIMO FONT -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+
         <link rel="stylesheet" href="css/general.css" />
         <link rel="stylesheet" href="css/style.css" />
 
         <title>Twitter Clone</title>
+
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
     </head>
-    <body class="grid grid--2-cols">
-        <nav class="nav">Nav</nav>
-        <main class="main">Main</main>
+
+    <body>
+        <div class="container grid grid--2-cols">
+            <header class="header">
+                <a href="#" class="logo">
+                    <ion-icon class="logo-icon" name="logo-twitter"></ion-icon>
+                </a>
+
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item--active">
+                            <a href="#" class="nav-link"
+                                ><ion-icon
+                                    class="nav-icon"
+                                    name="home"
+                                ></ion-icon
+                                ><span class="nav-text">Home</span></a
+                            >
+                        </li>
+                        <br />
+                        <li>
+                            <a href="#" class="nav-link"
+                                ><ion-icon
+                                    class="nav-icon"
+                                    name="search-outline"
+                                ></ion-icon
+                                ><span class="nav-text">Explore</span></a
+                            >
+                        </li>
+                        <br />
+                        <li>
+                            <a href="#" class="nav-link"
+                                ><ion-icon
+                                    class="nav-icon"
+                                    name="notifications-outline"
+                                ></ion-icon
+                                ><span class="nav-text">Notifications</span></a
+                            >
+                        </li>
+                        <br />
+                        <li>
+                            <a href="#" class="nav-link"
+                                ><ion-icon
+                                    class="nav-icon"
+                                    name="mail-outline"
+                                ></ion-icon
+                                ><span class="nav-text">Messages</span></a
+                            >
+                        </li>
+                        <br />
+                        <li>
+                            <a href="#" class="nav-link"
+                                ><ion-icon
+                                    class="nav-icon"
+                                    name="bookmark-outline"
+                                ></ion-icon
+                                ><span class="nav-text">Bookmarks</span></a
+                            >
+                        </li>
+                        <br />
+                        <li>
+                            <a href="#" class="nav-link"
+                                ><ion-icon
+                                    class="nav-icon"
+                                    name="list-outline"
+                                ></ion-icon
+                                ><span class="nav-text">Lists</span></a
+                            >
+                        </li>
+                        <br />
+                        <li>
+                            <a href="#" class="nav-link"
+                                ><ion-icon
+                                    class="nav-icon"
+                                    name="person-outline"
+                                ></ion-icon
+                                ><span class="nav-text">Profile</span></a
+                            >
+                        </li>
+                        <br />
+                        <li>
+                            <a href="#" class="nav-link"
+                                ><ion-icon
+                                    class="nav-icon"
+                                    name="ellipsis-horizontal-circle-outline"
+                                ></ion-icon
+                                ><span class="nav-text">More</span></a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+
+                <button class="btn btn--tweet btn--tweet-large">Tweet</button>
+                <button class="btn btn--profile">
+                    <img
+                        src="img/profile.png"
+                        class="profile-img"
+                        alt="Profile Image"
+                    />
+                    <p class="profile-full-name">Jen Smith</p>
+                    <p class="profile-username">@jen_smith</p>
+                    <ion-icon
+                        class="profile-more-info"
+                        name="ellipsis-horizontal"
+                    ></ion-icon>
+                </button>
+            </header>
+            <main class="main">Main</main>
+        </div>
     </body>
 </html>

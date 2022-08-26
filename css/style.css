@@ -1,1 +1,108 @@
+/***************************************/
+/* HEADER SECTION */
+/***************************************/
+.header {
+    padding: 1.6rem 3.2rem;
+    height: 100vh;
+    /* background-color: orange; */
 
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.logo-icon {
+    font-size: 3.2rem;
+    color: #2f9e44;
+}
+
+/****** NAVIGATION ******/
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-list li {
+    display: inline-block;
+}
+
+.nav-item--active .nav-text {
+    font-weight: 700;
+}
+
+.nav-link:link,
+.nav-link:visited {
+    font-size: 2.4rem;
+    text-decoration: none;
+    color: #000;
+    /* background-color: #6f6f6f; */
+    border-radius: 4rem;
+    padding: 1.2rem 1.6rem;
+
+    display: flex;
+    align-items: center;
+}
+
+.nav-link:hover,
+.nav-link:active {
+    background-color: #ddd;
+}
+
+.nav-icon {
+    font-size: 2.4rem;
+}
+
+.nav-text {
+    margin-left: 1.6rem;
+}
+
+/****** HEADER BUTTONS ******/
+.btn--tweet-large {
+    padding: 1.6rem 3.2rem;
+}
+
+.btn--profile {
+    padding: 0.8rem 1.2rem;
+    margin-top: auto;
+    background: none;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1.2rem;
+
+    transition: background-color 0.3s;
+}
+
+.btn--profile:hover {
+    background-color: #ddd;
+}
+
+.profile-img {
+    width: 70%;
+
+    grid-row: 1/3;
+    align-self: center;
+}
+
+.profile-full-name {
+    font-weight: 700;
+    align-self: end;
+}
+
+.profile-username {
+    color: #6f6f6f;
+    grid-row: 2 / span 1;
+    align-self: start;
+}
+
+.profile-more-info {
+    font-size: 1.6rem;
+
+    grid-row: 1 / 3;
+    align-self: center;
+    justify-self: end;
+}
+
+.main {
+    background-color: blue;
+}
