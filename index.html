@@ -29,7 +29,7 @@
     <body>
         <div class="content grid grid--2-cols">
             <header class="header">
-                <a href="#" class="logo">
+                <a href="#create-tweet" class="logo">
                     <ion-icon class="logo-icon" name="logo-twitter"></ion-icon>
                 </a>
 
@@ -124,7 +124,7 @@
                         class="profile-img img--btn-profile"
                         alt="Profile Image"
                     />
-                    <div>
+                    <div class="profile-user">
                         <p class="profile-full-name">Caleb Janhunen</p>
                         <p class="profile-username">@calebjanhunen</p>
                     </div>
@@ -137,7 +137,9 @@
 
             <main class="main grid">
                 <section class="section-sticky-top-bar container">
-                    <h1 class="heading-primary">Home</h1>
+                    <a href="#create-tweet"
+                        ><h1 class="heading-primary">Home</h1></a
+                    >
                 </section>
 
                 <section class="section-search-bar">
@@ -153,7 +155,7 @@
                 <section class="section-feed">
                     <!-- CREATE TWEET SECTION -->
                     <div class="create-tweet-box">
-                        <div class="container create-tweet">
+                        <div id="create-tweet" class="container create-tweet">
                             <img
                                 src="img/caleb-pfp.jpg"
                                 class="profile-img"
@@ -350,7 +352,7 @@
                                 </p>
                                 <div class="tweet-content">
                                     <p class="tweet-text">
-                                        Just went on a 3 hr bike ride. Worth it!
+                                        Long day at work today... 😴
                                     </p>
                                 </div>
                                 <div class="tweet-analytics">
@@ -455,10 +457,169 @@
                                 ></ion-icon>
                             </button>
                         </div>
+
+                        <div class="tweet container grid grid--3-cols">
+                            <img
+                                src="img/profile-man2.png"
+                                class="profile-img"
+                                alt="Profile Image"
+                            />
+                            <div class="tweet-main">
+                                <p class="tweet-created-by">
+                                    <a href="#" class="tweet-name"
+                                        >James Smith</a
+                                    ><ion-icon
+                                        class="verified-icon"
+                                        name="checkmark-circle"
+                                    ></ion-icon
+                                    ><span class="tweet-username">@james</span
+                                    ><span class="tweet-created-at"
+                                        >&middot; 3d</span
+                                    >
+                                </p>
+                                <div class="tweet-content">
+                                    <p class="tweet-text">
+                                        Lorem ipsum dolor sit amet consectetur,
+                                        adipisicing elit. Illo, iusto! Quod
+                                        temporibus quaerat explicabo nam itaque
+                                        neque sed, quos praesentium earum dolore
+                                        tempora laborum quibusdam maiores,
+                                        doloremque corrupti quidem labore!
+                                    </p>
+                                    <img
+                                        class="tweet-img"
+                                        src="img/car.jpg"
+                                        alt="Picture of a car"
+                                    />
+                                </div>
+                                <div class="tweet-analytics">
+                                    <button class="btn btn--analytics">
+                                        <ion-icon
+                                            class="icon analytics-icon"
+                                            name="chatbubble-outline"
+                                        ></ion-icon
+                                        ><span>140</span>
+                                    </button>
+                                    <button class="btn btn--analytics">
+                                        <ion-icon
+                                            class="icon analytics-icon"
+                                            name="repeat-outline"
+                                        ></ion-icon
+                                        ><span>157</span>
+                                    </button>
+                                    <button class="btn btn--analytics">
+                                        <ion-icon
+                                            class="icon analytics-icon"
+                                            name="heart-outline"
+                                        ></ion-icon
+                                        ><span>2,319</span>
+                                    </button>
+                                    <button class="btn btn--analytics">
+                                        <ion-icon
+                                            class="icon analytics-icon"
+                                            name="share-outline"
+                                        ></ion-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <button class="btn btn--more-options">
+                                <ion-icon
+                                    class="icon profile-more-info"
+                                    name="ellipsis-horizontal"
+                                ></ion-icon>
+                            </button>
+                        </div>
                     </div>
                 </section>
-                <aside class="aside">Aside</aside>
-                <footer class="footer">Footer</footer>
+
+                <aside class="aside">
+                    <div class="aside-whats-happening">
+                        <h2 class="heading-secondary container">
+                            What's happening
+                        </h2>
+                        <div class="aside-content-box">
+                            <div class="aside-content container">
+                                <div class="aside-content-text">
+                                    <p class="text-supporting">
+                                        Soccer &middot; Yesterday
+                                    </p>
+                                    <h3 class="heading-tertiary">
+                                        dignissimos quisquam cum molestiae
+                                        corrupti illo at quas ⚽
+                                    </h3>
+                                    <p class="text-supporting">23.k Tweets</p>
+                                </div>
+                                <img
+                                    src="img/soccer.jpg"
+                                    class="aside-content-img"
+                                    alt="Image"
+                                />
+                            </div>
+
+                            <div class="aside-content container">
+                                <div class="aside-content-text">
+                                    <p class="text-supporting">
+                                        Trending in Canada
+                                    </p>
+                                    <h3 class="heading-tertiary">
+                                        Lorem ipsum dolor Lorem ipsum dolor
+                                    </h3>
+                                    <p class="text-supporting">23.4k Tweets</p>
+                                </div>
+                            </div>
+
+                            <div class="aside-content container">
+                                <div class="aside-content-text">
+                                    <p class="text-supporting">
+                                        Technology &middot; Trending
+                                    </p>
+                                    <h3 class="heading-tertiary">
+                                        #Loremipsumdolor
+                                    </h3>
+                                    <p class="text-supporting">43k Tweets</p>
+                                </div>
+                            </div>
+
+                            <div class="aside-content container">
+                                <div class="aside-content-text">
+                                    <p class="text-supporting">
+                                        Lorem ipsum &middot; LIVE
+                                    </p>
+                                    <h3 class="heading-tertiary">
+                                        Odio nemo eveniet minima molestias
+                                        veritatis.
+                                    </h3>
+                                </div>
+                                <img
+                                    src="img/forest.jpg"
+                                    class="aside-content-img"
+                                    alt="Image"
+                                />
+                            </div>
+
+                            <div class="aside-content container">
+                                <div class="aside-content-text">
+                                    <p class="text-supporting">
+                                        Music &middot; Last night
+                                    </p>
+                                    <h3 class="heading-tertiary">
+                                        Lorem ipsum dolor Lorem ipsum dolor
+                                    </h3>
+                                    <p class="text-supporting">
+                                        Trending with <span>#music</span>
+                                    </p>
+                                </div>
+                                <img
+                                    src="img/caleb-pfp.jpg"
+                                    class="aside-content-img"
+                                    alt="Image"
+                                />
+                            </div>
+                        </div>
+                    </div>
+
+                    <footer class="footer">Footer</footer>
+                </aside>
             </main>
         </div>
     </body>

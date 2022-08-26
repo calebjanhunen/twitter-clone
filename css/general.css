@@ -15,11 +15,18 @@ body {
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 /***************************************/
 /* GENERAL REUSABLE COMPONENTS */
 /***************************************/
+a:link,
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
 .grid {
     display: grid;
 }
@@ -44,6 +51,16 @@ html {
 
 .heading-primary {
     font-size: 2rem;
+}
+
+.heading-secondary {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+
+.heading-tertiary {
+    font-size: 1.6rem;
 }
 
 .profile-img {
