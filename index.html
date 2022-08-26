@@ -120,12 +120,14 @@
                 <button class="btn btn--tweet btn--tweet-large">Tweet</button>
                 <button class="btn btn--profile">
                     <img
-                        src="img/profile.png"
-                        class="profile-img"
+                        src="img/caleb-pfp.jpg"
+                        class="profile-img img--btn-profile"
                         alt="Profile Image"
                     />
-                    <p class="profile-full-name">Jen Smith</p>
-                    <p class="profile-username">@jen_smith</p>
+                    <div>
+                        <p class="profile-full-name">Caleb Janhunen</p>
+                        <p class="profile-username">@calebjanhunen</p>
+                    </div>
                     <ion-icon
                         class="profile-more-info"
                         name="ellipsis-horizontal"
@@ -148,52 +150,309 @@
                     </div>
                 </section>
 
-                <section class="section-feed container">
-                    <div class="create-tweet">
-                        <img
-                            src="img/profile.png"
-                            class="create-tweet-img"
-                            alt="Profile Image"
-                        />
-                        <textarea
-                            class="create-tweet-input"
-                            placeholder="What's Happening?"
-                            maxlength="246"
-                        ></textarea>
+                <section class="section-feed">
+                    <!-- CREATE TWEET SECTION -->
+                    <div class="create-tweet-box">
+                        <div class="container create-tweet">
+                            <img
+                                src="img/caleb-pfp.jpg"
+                                class="profile-img"
+                                alt="Profile Image"
+                            />
+                            <textarea
+                                class="create-tweet-input"
+                                placeholder="What's Happening?"
+                                maxlength="246"
+                            ></textarea>
 
-                        <div class="create-tweet-more-options">
-                            <button class="btn--more-options">
+                            <div class="create-tweet-more-options">
+                                <button class="btn--attachments">
+                                    <ion-icon
+                                        class="icon more-options-icon"
+                                        name="images-outline"
+                                    ></ion-icon>
+                                </button>
+                                <button class="btn--attachments">
+                                    <ion-icon
+                                        class="icon more-options-icon"
+                                        name="stats-chart-outline"
+                                    ></ion-icon>
+                                </button>
+                                <button class="btn--attachments">
+                                    <ion-icon
+                                        class="icon more-options-icon"
+                                        name="happy-outline"
+                                    ></ion-icon>
+                                </button>
+                                <button class="btn--attachments">
+                                    <ion-icon
+                                        class="icon more-options-icon"
+                                        name="calendar-outline"
+                                    ></ion-icon>
+                                </button>
+                                <button class="btn--attachments">
+                                    <ion-icon
+                                        class="icon more-options-icon"
+                                        name="location-outline"
+                                    ></ion-icon>
+                                </button>
+                                <button class="btn btn--tweet btn--tweet-small">
+                                    Tweet
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FEED -->
+                    <div class="feed-box">
+                        <div class="tweet container grid grid--3-cols">
+                            <img
+                                src="img/profile.png"
+                                class="profile-img"
+                                alt="Profile Image"
+                            />
+                            <div class="tweet-main">
+                                <p class="tweet-created-by">
+                                    <a href="#" class="tweet-name">Jen</a
+                                    ><span class="tweet-username"
+                                        >@jen_smith</span
+                                    ><span class="tweet-created-at"
+                                        >&middot; 15m</span
+                                    >
+                                </p>
+                                <p class="tweet-text">
+                                    This is my first tweet!
+                                </p>
+                                <div class="tweet-analytics">
+                                    <button class="btn btn--analytics">
+                                        <ion-icon
+                                            class="icon analytics-icon"
+                                            name="chatbubble-outline"
+                                        ></ion-icon
+                                        ><span>1</span>
+                                    </button>
+                                    <button class="btn btn--analytics">
+                                        <ion-icon
+                                            class="icon analytics-icon"
+                                            name="repeat-outline"
+                                        ></ion-icon
+                                        ><span>0</span>
+                                    </button>
+                                    <button class="btn btn--analytics">
+                                        <ion-icon
+                                            class="icon analytics-icon"
+                                            name="heart-outline"
+                                        ></ion-icon
+                                        ><span>6</span>
+                                    </button>
+                                    <button class="btn btn--analytics">
+                                        <ion-icon
+                                            class="icon analytics-icon"
+                                            name="share-outline"
+                                        ></ion-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <button class="btn btn--more-options">
                                 <ion-icon
-                                    class="more-options-icon"
-                                    name="images-outline"
+                                    class="icon profile-more-info"
+                                    name="ellipsis-horizontal"
                                 ></ion-icon>
                             </button>
-                            <button class="btn--more-options">
+                        </div>
+
+                        <div class="tweet container grid grid--3-cols">
+                            <img
+                                src="img/caleb-pfp.jpg"
+                                class="profile-img"
+                                alt="Profile Image"
+                            />
+                            <div class="tweet-main">
+                                <p class="tweet-created-by">
+                                    <a href="#" class="tweet-name">Caleb</a
+                                    ><ion-icon
+                                        class="verified-icon"
+                                        name="checkmark-circle"
+                                    ></ion-icon
+                                    ><span class="tweet-username"
+                                        >@calebjanhunen</span
+                                    ><span class="tweet-created-at"
+                                        >&middot; 1h</span
+                                    >
+                                </p>
+                                <div class="tweet-content">
+                                    <p class="tweet-text">
+                                        Creating a twitter clone using html and
+                                        css
+                                    </p>
+                                    <img
+                                        class="tweet-img"
+                                        src="img/twitter-clone-img.png"
+                                        alt="Picture html and css code"
+                                    />
+                                </div>
+                                <div class="tweet-analytics">
+                                    <button class="btn btn--analytics">
+                                        <ion-icon
+                                            class="icon analytics-icon"
+                                            name="chatbubble-outline"
+                                        ></ion-icon
+                                        ><span>140</span>
+                                    </button>
+                                    <button class="btn btn--analytics">
+                                        <ion-icon
+                                            class="icon analytics-icon"
+                                            name="repeat-outline"
+                                        ></ion-icon
+                                        ><span>157</span>
+                                    </button>
+                                    <button class="btn btn--analytics">
+                                        <ion-icon
+                                            class="icon analytics-icon"
+                                            name="heart-outline"
+                                        ></ion-icon
+                                        ><span>2,319</span>
+                                    </button>
+                                    <button class="btn btn--analytics">
+                                        <ion-icon
+                                            class="icon analytics-icon"
+                                            name="share-outline"
+                                        ></ion-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <button class="btn btn--more-options">
                                 <ion-icon
-                                    class="more-options-icon"
-                                    name="stats-chart-outline"
+                                    class="icon profile-more-info"
+                                    name="ellipsis-horizontal"
                                 ></ion-icon>
                             </button>
-                            <button class="btn--more-options">
+                        </div>
+
+                        <div class="tweet container grid grid--3-cols">
+                            <img
+                                src="img/profile-man.webp"
+                                class="profile-img"
+                                alt="Profile Image"
+                            />
+                            <div class="tweet-main">
+                                <p class="tweet-created-by">
+                                    <a href="#" class="tweet-name"
+                                        >John Williams</a
+                                    ><ion-icon
+                                        class="verified-icon"
+                                        name="checkmark-circle"
+                                    ></ion-icon
+                                    ><span class="tweet-username">@jwill</span
+                                    ><span class="tweet-created-at"
+                                        >&middot; 3h</span
+                                    >
+                                </p>
+                                <div class="tweet-content">
+                                    <p class="tweet-text">
+                                        Just went on a 3 hr bike ride. Worth it!
+                                    </p>
+                                </div>
+                                <div class="tweet-analytics">
+                                    <button class="btn btn--analytics">
+                                        <ion-icon
+                                            class="icon analytics-icon"
+                                            name="chatbubble-outline"
+                                        ></ion-icon
+                                        ><span>324</span>
+                                    </button>
+                                    <button class="btn btn--analytics">
+                                        <ion-icon
+                                            class="icon analytics-icon"
+                                            name="repeat-outline"
+                                        ></ion-icon
+                                        ><span>346</span>
+                                    </button>
+                                    <button class="btn btn--analytics">
+                                        <ion-icon
+                                            class="icon analytics-icon"
+                                            name="heart-outline"
+                                        ></ion-icon
+                                        ><span>644</span>
+                                    </button>
+                                    <button class="btn btn--analytics">
+                                        <ion-icon
+                                            class="icon analytics-icon"
+                                            name="share-outline"
+                                        ></ion-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <button class="btn btn--more-options">
                                 <ion-icon
-                                    class="more-options-icon"
-                                    name="happy-outline"
+                                    class="icon profile-more-info"
+                                    name="ellipsis-horizontal"
                                 ></ion-icon>
                             </button>
-                            <button class="btn--more-options">
+                        </div>
+
+                        <div class="tweet container grid grid--3-cols">
+                            <img
+                                src="img/elon-musk.jpg"
+                                class="profile-img"
+                                alt="Profile Image"
+                            />
+                            <div class="tweet-main">
+                                <p class="tweet-created-by">
+                                    <a href="#" class="tweet-name">Elon Musk</a
+                                    ><ion-icon
+                                        class="verified-icon"
+                                        name="checkmark-circle"
+                                    ></ion-icon
+                                    ><span class="tweet-username"
+                                        >@elonmusk</span
+                                    ><span class="tweet-created-at"
+                                        >&middot; 4h</span
+                                    >
+                                </p>
+                                <div class="tweet-content">
+                                    <p class="tweet-text">My new car</p>
+                                    <img
+                                        class="tweet-img"
+                                        src="img/car.jpg"
+                                        alt="Picture of a car"
+                                    />
+                                </div>
+                                <div class="tweet-analytics">
+                                    <button class="btn btn--analytics">
+                                        <ion-icon
+                                            class="icon analytics-icon"
+                                            name="chatbubble-outline"
+                                        ></ion-icon
+                                        ><span>140</span>
+                                    </button>
+                                    <button class="btn btn--analytics">
+                                        <ion-icon
+                                            class="icon analytics-icon"
+                                            name="repeat-outline"
+                                        ></ion-icon
+                                        ><span>157</span>
+                                    </button>
+                                    <button class="btn btn--analytics">
+                                        <ion-icon
+                                            class="icon analytics-icon"
+                                            name="heart-outline"
+                                        ></ion-icon
+                                        ><span>2,319</span>
+                                    </button>
+                                    <button class="btn btn--analytics">
+                                        <ion-icon
+                                            class="icon analytics-icon"
+                                            name="share-outline"
+                                        ></ion-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <button class="btn btn--more-options">
                                 <ion-icon
-                                    class="more-options-icon"
-                                    name="calendar-outline"
+                                    class="icon profile-more-info"
+                                    name="ellipsis-horizontal"
                                 ></ion-icon>
-                            </button>
-                            <button class="btn--more-options">
-                                <ion-icon
-                                    class="more-options-icon"
-                                    name="location-outline"
-                                ></ion-icon>
-                            </button>
-                            <button class="btn btn--tweet btn--tweet-small">
-                                Tweet
                             </button>
                         </div>
                     </div>

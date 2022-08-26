@@ -23,6 +23,7 @@
 
     - Primary: #2f9e44
     - Tints:
+        - #d5ecda
     - Shades:
         - #2a8e3d
     - Accents:
@@ -37,7 +38,8 @@
 
 --- 06 BORDER RADIUS
 
-    - buttons: border-radius: 4rem;
+    - buttons: 4rem;
+    - tweet images: 1rem;
 
 --- 07 WHITESPACE
 

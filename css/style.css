@@ -77,10 +77,7 @@
     background-color: #ddd;
 }
 
-.profile-img {
-    width: 70%;
-
-    grid-row: 1/3;
+.img--btn-profile {
     align-self: center;
 }
 
@@ -91,14 +88,11 @@
 
 .profile-username {
     color: #6f6f6f;
-    grid-row: 2 / span 1;
-    align-self: start;
 }
 
 .profile-more-info {
     font-size: 1.6rem;
 
-    grid-row: 1 / 3;
     align-self: center;
     justify-self: end;
 }
@@ -117,9 +111,11 @@
 /* STICKY TOP BAR SECTION */
 /***************************************/
 .section-sticky-top-bar {
-    background-color: #fff;
     z-index: 999;
     border-right: 1px solid #eee;
+
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.8);
 
     grid-column: 1/2;
     grid-row: 1/2;
@@ -163,9 +159,17 @@
 /***************************************/
 .section-feed {
     border-right: 1px solid #eee;
+    height: 100vh;
 
     grid-row: 1/-1;
     grid-column: 1/2;
+
+    overflow-y: scroll;
+}
+
+/* CREATE TWEET SECTION */
+.create-tweet-box {
+    border-bottom: 1px solid #eee;
 }
 
 .create-tweet {
@@ -173,21 +177,20 @@
 
     display: grid;
     grid-template-columns: 1fr 9fr;
-    grid-template-rows: 2fr 1fr;
+    grid-template-rows: 1fr 3.2rem;
     column-gap: 1.2rem;
     row-gap: 1.2rem;
-}
-
-.create-tweet-img {
-    width: 100%;
+    overflow: hidden;
 }
 
 .create-tweet-input {
     resize: none;
     font-family: inherit;
     font-size: 2rem;
+    height: 60%;
     border: none;
     align-self: end;
+    overflow: hidden;
 }
 
 .create-tweet-input:focus {
@@ -202,7 +205,7 @@
     grid-column: 2/-1;
 }
 
-.btn--more-options {
+.btn--attachments {
     background: none;
     border: none;
     cursor: pointer;
@@ -215,7 +218,108 @@
 .btn--tweet-small {
     margin-left: auto;
     padding: 0.8rem 1.6rem;
-    /* height: 3.4rem; */
+}
+
+/* POSTS SECTION */
+.tweet {
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+.tweet:hover {
+    background: #eee;
+}
+
+.tweet-img {
+    width: 30%;
+}
+
+.tweet-main {
+    font-size: 1.6rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.tweet-created-by {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.tweet-name:link,
+.tweet-name:visited {
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+}
+
+.tweet-name:hover,
+.tweet-name:active {
+    text-decoration: underline;
+}
+
+.verified-icon {
+    color: #2f9e44;
+    font-size: 1.6rem;
+}
+
+.tweet-username,
+.tweet-created-at {
+    color: #6f6f6f;
+}
+
+.tweet-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.tweet-img {
+    border-radius: 1rem;
+    width: 100%;
+}
+
+.tweet-analytics {
+    margin-top: auto;
+    padding-right: 3.2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn--analytics {
+    display: flex;
+    color: #6f6f6f;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn--analytics:hover {
+    color: #2f9e44;
+}
+
+.btn--analytics:hover .analytics-icon {
+    background-color: #d5ecda;
+}
+
+.btn--analytics:hover:nth-child(3) {
+    color: #ff0000;
+}
+
+.btn--analytics:hover:nth-child(3) .analytics-icon {
+    background-color: #ffcccc;
+}
+
+.btn--analytics span {
+    margin-left: 0.8rem;
+}
+
+.btn--more-options {
+    padding-top: 1.6rem;
+    align-self: start;
 }
 
 /***************************************/
