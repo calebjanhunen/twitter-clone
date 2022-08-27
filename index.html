@@ -15,6 +15,7 @@
 
         <link rel="stylesheet" href="css/general.css" />
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/queries.css" />
 
         <title>Twitter Clone</title>
 
@@ -33,7 +34,7 @@
                     <ion-icon class="logo-icon" name="logo-twitter"></ion-icon>
                 </a>
 
-                <nav class="nav">
+                <nav class="nav original-component">
                     <ul class="nav-list">
                         <li class="nav-item--active">
                             <a href="#" class="nav-link"
@@ -117,8 +118,98 @@
                     </ul>
                 </nav>
 
-                <button class="btn btn--tweet btn--tweet-large">Tweet</button>
-                <button class="btn btn--profile">
+                <!-- NAV FOR SMALLER SCREENS (<1200px) -->
+                <nav class="nav small-screen-component">
+                    <ul class="nav-list">
+                        <li class="nav-item--active">
+                            <a href="#" class="nav-link"
+                                ><ion-icon
+                                    class="nav-icon"
+                                    name="home"
+                                ></ion-icon
+                            ></a>
+                        </li>
+                        <br />
+                        <li>
+                            <a href="#" class="nav-link"
+                                ><ion-icon
+                                    class="nav-icon"
+                                    name="search-outline"
+                                ></ion-icon
+                            ></a>
+                        </li>
+                        <br />
+                        <li>
+                            <a href="#" class="nav-link"
+                                ><ion-icon
+                                    class="nav-icon"
+                                    name="notifications-outline"
+                                ></ion-icon
+                            ></a>
+                        </li>
+                        <br />
+                        <li>
+                            <a href="#" class="nav-link"
+                                ><ion-icon
+                                    class="nav-icon"
+                                    name="mail-outline"
+                                ></ion-icon
+                            ></a>
+                        </li>
+                        <br />
+                        <li>
+                            <a href="#" class="nav-link"
+                                ><ion-icon
+                                    class="nav-icon"
+                                    name="bookmark-outline"
+                                ></ion-icon
+                            ></a>
+                        </li>
+                        <br />
+                        <li>
+                            <a href="#" class="nav-link"
+                                ><ion-icon
+                                    class="nav-icon"
+                                    name="list-outline"
+                                ></ion-icon
+                            ></a>
+                        </li>
+                        <br />
+                        <li>
+                            <a href="#" class="nav-link"
+                                ><ion-icon
+                                    class="nav-icon"
+                                    name="person-outline"
+                                ></ion-icon
+                            ></a>
+                        </li>
+                        <br />
+                        <li>
+                            <a href="#" class="nav-link"
+                                ><ion-icon
+                                    class="nav-icon"
+                                    name="ellipsis-horizontal-circle-outline"
+                                ></ion-icon
+                            ></a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <button
+                    class="btn btn--tweet btn--tweet-large original-component"
+                >
+                    Tweet
+                </button>
+
+                <!-- TWEET BTN FOR SMALLER SCREENS -->
+                <button class="btn btn--tweet small-screen-component">
+                    <ion-icon
+                        class="btn-tweet-icon"
+                        name="pencil-outline"
+                    ></ion-icon>
+                </button>
+
+                <button class="btn btn--profile original-component">
                     <img
                         src="img/caleb-pfp.jpg"
                         class="profile-img img--btn-profile"
@@ -133,6 +224,15 @@
                         name="ellipsis-horizontal"
                     ></ion-icon>
                 </button>
+
+                <!-- PROFILE BTN FOR SMALLER SCREENS -->
+                <button class="btn btn--profile small-screen-component">
+                    <img
+                        src="img/caleb-pfp.jpg"
+                        class="profile-img img--btn-profile"
+                        alt="Profile Image"
+                    />
+                </button>
             </header>
 
             <main class="main grid">
@@ -142,7 +242,7 @@
                     >
                 </section>
 
-                <section class="section-search-bar">
+                <section class="section-search-bar tablet-screen">
                     <div class="search-bar">
                         <ion-icon
                             class="search-bar-icon"
@@ -533,7 +633,7 @@
                 </section>
 
                 <aside class="aside">
-                    <div class="aside-whats-happening">
+                    <div class="aside-whats-happening tablet-screen">
                         <h2 class="heading-secondary container">
                             What's happening
                         </h2>

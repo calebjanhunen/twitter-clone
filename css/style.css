@@ -11,6 +11,10 @@
     gap: 2.4rem;
 }
 
+.small-screen-component {
+    display: none;
+}
+
 .logo-icon {
     font-size: 3.2rem;
     color: #2f9e44;
@@ -74,13 +78,13 @@
     transition: background-color 0.3s;
 }
 
+.btn--profile.small-screen-component {
+    display: none;
+}
+
 .btn--profile:hover {
     background-color: #ddd;
 }
-
-/* .profile-user {
-    font-size: 1.2rem;
-} */
 
 .img--btn-profile {
     align-self: center;
